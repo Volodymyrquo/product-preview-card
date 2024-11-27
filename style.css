@@ -76,6 +76,9 @@ main {
   line-height: 15px;
   letter-spacing: 5px;
   text-transform: uppercase;
+  @media (min-width: 30rem) {
+    margin-bottom: 20px;
+  }
 }
 .title {
   font-family: "Fraunces", sans-serif;
