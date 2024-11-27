@@ -65,6 +65,9 @@ body {
 main {
   padding: 24px;
   width: 300px;
+  @media (min-width: 30rem) {
+  }
+  padding: 32px;
 }
 
 .definition {
