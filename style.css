@@ -95,9 +95,6 @@ main {
 .description {
   line-height: 23px;
   margin-bottom: 24px;
-  @media (min-width: 30rem) {
-    margin-bottom: 29px;
-  }
 }
 .button {
   display: flex;
@@ -118,6 +115,9 @@ main {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
+  @media (min-width: 30rem) {
+    margin-bottom: 30px;
+  }
 }
 .current-price {
   font-family: Fraunces, sans-serif;
