@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  /* Primary */
+
+  --elements-background: hsl(158, 36%, 37%);
+  --primary-background: hsl(30, 38%, 92%);
+
+  /* Neutral */
+
+  --headers-color: hsl(212, 21%, 14%);
+  --primary-color: hsl(228, 12%, 48%);
+  --secondary-background: hsl(0, 0%, 100%);
+
+  /* Fonts */
+  --medium: 500;
+  --bold: 700;
+}
+
+body {
+  padding: 1.75rem 1rem;
+  background-color: var(--primary-background);
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: var(--medium);
+  color: var(--primary-color);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  background-color: var(--secondary-background);
+  width: 100%;
+  @media (min-width: 30rem) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 450px;
+    flex-direction: row;
+  }
+}
+.header {
+  height: 15rem;
+  width: 100%;
+  background: url(images/image-product-mobile.jpg) center no-repeat;
+  background-size: cover;
+
+  @media (min-width: 30rem) {
+    height: 100%;
+    width: 300px;
+    background: url(images/image-product-desktop.jpg) center no-repeat;
+    background-size: cover;
+  }
+}
+main {
+  padding: 24px;
+  width: 300px;
+}
+
+.definition {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.title {
+  font-family: "Fraunces", sans-serif;
+  font-weight: var(--bold);
+  font-size: 32px;
+  color: var(--headers-color);
+  margin-bottom: 16px;
+}
+
+.description {
+  line-height: 23px;
+  margin-bottom: 24px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 48px;
+  background-color: var(--elements-background);
+  border-color: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    background-color: hsla(157, 43%, 17%, 1);
+  }
+}
+.price {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+.current-price {
+  font-family: Fraunces, sans-serif;
+  font-weight: var(--bold);
+  font-size: 32px;
+  color: var(--elements-background);
+  margin-right: 19px;
+}
+
+.previous-price {
+  text-decoration: line-through;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.button-img {
+  width: 15px;
+}
+.button-text {
+  display: block;
+  color: var(--secondary-background);
+  font-weight: var(--bold);
+}
+.links {
+  position: fixed;
+  bottom: 0.25rem;
+  left: 0;
+  right: 0;
+}
